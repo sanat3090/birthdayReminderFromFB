@@ -24,4 +24,5 @@
     <string name="gmail">Gmail</string>
     <string name="facebook">To Wall/Groups</string>
     <string name="facebook_messenger">Messenger</string>
+    <string name="test">Messenger</string>
 </resources>
