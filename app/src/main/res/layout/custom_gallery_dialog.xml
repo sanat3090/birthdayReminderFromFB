@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Photos"
+            android:id="@+id/textView13"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:textSize="22dp"
+            android:textColor="@color/filter_actionbar_color"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/greyDark300"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.50"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white"
+                android:id="@+id/uploadUsingCameraTV">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/cam1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Camera"
+                    android:id="@+id/uploadUsingCameraTV1"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/filter_actionbar_color"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.50"
+                android:layout_marginLeft="1dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@color/white"
+                android:id="@+id/chooseFromGalleryTV">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView6"
+                    android:layout_below="@+id/imageView"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/gallery_icon_64" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gallery"
+                    android:id="@+id/chooseFromGalleryTV1"
+                    android:layout_toRightOf="@+id/imageView6"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:textSize="20dp"
+                    android:layout_alignTop="@+id/imageView6"
+                    android:gravity="center|left"
+                    android:textColor="@color/filter_actionbar_color"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="@color/greyDark300"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:layout_weight="0.50"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:id="@+id/uploadFromFacebookRL"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/fb"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook"
+                    android:id="@+id/textView60"
+                    android:textSize="20dp"
+                    android:gravity="center|left"
+                    android:textColor="@color/filter_actionbar_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.50"
+                android:orientation="vertical"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:background="@color/white"
+                android:id="@+id/uploadFromFacebookPageRL"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView19"
+                    android:src="@drawable/fb"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FB (Page)"
+                    android:id="@+id/textView82"
+                    android:textSize="20dp"
+                    android:gravity="center|left"
+                    android:textColor="@color/filter_actionbar_color"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

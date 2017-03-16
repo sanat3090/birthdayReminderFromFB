@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Friends Birthday</string>
+    <string name="crop__done">SAVE</string>
+    <string name="crop__cancel">CANCEL</string>
+    <string name="facebook_app_id">1710017389322063</string> <!--"sanat test development"-->
+    <string name="icon_sms">&#xe8c4;</string>
+    <string name="icon_whatsapp_1">&#xe8ed;</string>
+    <string name="icon_whatsapp">&#xe8b0;</string>
+    <string name="icon_facebook_squared">&#xe89b;</string>
+    <string name="icon_facebook_circled">&#xe89a;</string>
+    <string name="icon_facebook_dark">&#xe83f;</string>
+    <string name="icon_mail">&#xe80c;</string>
+    <string name="icon_doc_text">&#xe88e;</string>
+    <string name="icon_fb_messenger">&#xe8f3;</string>
+    <string name="icon_gmail_new">&#xe92f;</string>
+    <string name="icon_fb_new">&#xe92e;</string>
+    <string name="icon_sms_new">&#xe8f5;</string>
+    <string name="icon_mail_alt">&#xe8e4;</string>
+    <string name="lq_whatsapp_check">&#xe8f2;</string>
+
+    <string name="sms">SMS</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="email_text">E-mail</string>
+    <string name="gmail">Gmail</string>
+    <string name="facebook">To Wall/Groups</string>
+    <string name="facebook_messenger">Messenger</string>
+</resources>

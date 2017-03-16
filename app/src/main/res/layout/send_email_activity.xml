@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:background="@drawable/corder_background_drawable"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="top"
+                android:hint="Say Something..."
+                android:id="@+id/editText"
+                android:layout_weight="2"
+                android:minLines="6" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <ImageView
+                    android:id="@+id/productIV"
+                    android:layout_width="300dp"
+                    android:layout_height="200sp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/placeholder_image"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_camera">
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/merchant_background_drawable"
+            android:id="@+id/sendEmailTV"
+            android:gravity="center"
+            android:text="Send Wishes"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/corder_background_drawable"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:id="@+id/nameTV"
+                android:textColor="@color/black"
+                android:textSize="@dimen/header_font_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:id="@+id/birthdayTV"
+                android:text="December 19, 2017"
+                android:textColor="@color/greyDark800"
+                android:textSize="@dimen/header_font_size_small" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
